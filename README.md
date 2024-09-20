@@ -1,6 +1,5 @@
 # Arabic Dialect Classification
 
-# Arabic Dialect Classification
 This NLP project focuses on predicting the dialect of Arabic texts using advanced machine-learning techniques. Using random forest and Fasttext and LSTM and Transformer models, the project aims to classify Arabic dialects accurately. As the Arabic language is known for its complex grammar and varied letter formations, NLP problems related to Arabic are particularly challenging. Moreover, with numerous countries speaking the language, each country has its unique dialect. Therefore, this project aims to develop a robust model that accurately predicts the dialect based on the input text.
 
 ## Dataset
@@ -13,4 +12,8 @@ The dataset utilized in this project is a collection of Arabic sentences labeled
 4. Deployment 
 
 ## Results
-The Random Forest Model achieved an Macro-F1 score of 70%, while the RNN model achieved an Macro-F1 score of 82%.
+for Macro-F1 score:
+- The Random Forest Model = 65%
+- The fasttext Model = 80%
+- The LSTM Model (3 epochs) = 82% 
+- The Arabert (transformer) Model (2 epochs) = 87%
