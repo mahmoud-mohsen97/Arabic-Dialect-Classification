@@ -1,19 +1,20 @@
 # Arabic Dialect Classification
 
-This NLP project focuses on predicting the dialect of Arabic texts using advanced machine-learning techniques. Using random forest and Fasttext and LSTM and Transformer models, the project aims to classify Arabic dialects accurately. As the Arabic language is known for its complex grammar and varied letter formations, NLP problems related to Arabic are particularly challenging. Moreover, with numerous countries speaking the language, each country has its unique dialect. Therefore, this project aims to develop a robust model that accurately predicts the dialect based on the input text.
+This project focuses on classifying Arabic dialects using various machine learning models, including Random Forest, FastText, LSTM, and AraBERT (Transformer). The goal is to predict the dialect of Arabic texts, which is a challenging task due to the diverse grammar and dialectical variations in the Arabic language.
 
 ## Dataset
-The dataset utilized in this project is a collection of Arabic sentences labeled with their corresponding dialects from five distinct countries, namely Egypt ('EG'), Lebanon ('LB'), Libya ('LY'), Sudan ('SD'), and Morocco ('MA'). It is worth noting that the dataset is imbalanced, with the majority of the data originating from the 'EG' dialect. You can find the original paper of the dataset [here](https://arxiv.org/pdf/2005.06557.pdf).
+The dataset contains Arabic sentences labeled with dialects from five countries: Egypt (EG), Lebanon (LB), Libya (LY), Sudan (SD), and Morocco (MA). The dataset is imbalanced, with most samples from the Egyptian dialect. The original dataset and research paper can be found [here](https://arxiv.org/pdf/2005.06557.pdf).
 
-## Deliverables
-1. Data Fetching 
-2. Data Preprocessing 
-3. Model Training 
-4. Deployment 
+## Pipeline
+1. Data Preprocessing: Text cleaning, tokenization, and handling of imbalanced data.
+2. Model Training: Implementation of multiple models to classify the dialect.
+3. Evaluation: Macro-F1 score used to evaluate model performance.
 
 ## Results
-for Macro-F1 score:
-- The Random Forest Model = 65%
-- The fasttext Model = 80%
-- The LSTM Model (3 epochs) = 82% 
-- The Arabert (transformer) Model (2 epochs) = 87%
+- Random Forest: 65% Macro-F1
+- FastText: 80% Macro-F1
+- LSTM: 82% Macro-F1 (3 epochs)
+- AraBERT: 87% Macro-F1 (2 epochs)
+
+## Deployment
+The trained model can be further deployed to classify Arabic dialects in real-time applications.
